@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Menu from "./Menu";
 import Personal from "./Personal";
+import Timeline from "./Timeline";
 
 const personalItems = [
   {
@@ -17,23 +18,17 @@ const personalItems = [
   },
 ];
 
-const menuItems = [
-  {
-    title: "Experience",
-  },
-  {
-    title: "Personal",
-  },
-  {
-    title: "Contact",
-  },
-];
-
 const App = () => {
+  const [menuItem, setMenuItem] = useState("Experience");
   return (
     <div>
-      <Menu menuItems={menuItems} />
-      <Personal personalItems={personalItems} />
+      <Menu setMenuItem={setMenuItem} />
+      {menuItem === "Experience" ? <Timeline /> : console.log("no dice")}
+      {menuItem === "Personal" ? (
+        <Personal personalItems={personalItems} />
+      ) : (
+        console.log("no dice")
+      )}
     </div>
   );
 };

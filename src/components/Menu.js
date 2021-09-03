@@ -1,33 +1,39 @@
 import React, { useState } from "react";
 
-const Menu = ({ menuItems }) => {
+const Menu = ({ setMenuItem }) => {
   const [activeMenuItem, setActiveMenuItem] = useState("Experience");
   const ExperienceActive = activeMenuItem === "Experience" ? "active" : "";
   const PersonalActive = activeMenuItem === "Personal" ? "active" : "";
   const ContactActive = activeMenuItem === "Contact" ? "active" : "";
+
+  const setMenus = (item) => {
+    setActiveMenuItem(item);
+    setMenuItem(item);
+  };
+
   return (
-    <div>
+    <React.Fragment>
       <div className="ui three item menu">
         <a
           className={`item ${ExperienceActive}`}
-          onClick={() => setActiveMenuItem("Experience")}
+          onClick={() => setMenus("Experience")}
         >
           Experience
         </a>
         <a
           className={`item ${PersonalActive}`}
-          onClick={() => setActiveMenuItem("Personal")}
+          onClick={() => setMenus("Personal")}
         >
           Personal
         </a>
         <a
           className={`item ${ContactActive}`}
-          onClick={() => setActiveMenuItem("Contact")}
+          onClick={() => setMenus("Contact")}
         >
           Contact
         </a>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

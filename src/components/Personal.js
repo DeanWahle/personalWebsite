@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import composite from "../images/composite.jpg";
 
 const Personal = ({ personalItems }) => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -20,7 +21,22 @@ const Personal = ({ personalItems }) => {
       </React.Fragment>
     );
   });
-  return <div className="ui styled accordion">{renderedItems}</div>;
+  return (
+    <div>
+      <div class="ui card">
+        <div class="image">
+          <img src={composite}></img>
+        </div>
+        <div class="content">
+          <a class="header">Dean Wahle</a>
+          <div class="meta">
+            <span class="date">Class of 2023</span>
+          </div>
+        </div>
+      </div>
+      <div className="ui styled accordion">{renderedItems}</div>
+    </div>
+  );
 };
 
 export default Personal;
