@@ -1,0 +1,11 @@
+.rowC {
+  display: flex;
+  flex-direction: row;
+}
+.two {
+  margin: 10px;
+  width: 20rem;
+  display: inline-block;
+  size: 20rem;
+  position: static;
+}

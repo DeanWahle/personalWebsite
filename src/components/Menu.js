@@ -24,7 +24,7 @@ const Menu = ({ setMenuItem }) => {
           className={`item ${PersonalActive}`}
           onClick={() => setMenus("Personal")}
         >
-          Personal
+          About Me
         </a>
         <a
           className={`item ${ContactActive}`}

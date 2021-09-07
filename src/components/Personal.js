@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import composite from "../images/composite.jpg";
+import "./Personal.css";
 
 const Personal = ({ personalItems }) => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -23,18 +24,28 @@ const Personal = ({ personalItems }) => {
   });
   return (
     <div>
-      <div class="ui card">
-        <div class="image">
-          <img src={composite}></img>
-        </div>
-        <div class="content">
-          <a class="header">Dean Wahle</a>
-          <div class="meta">
-            <span class="date">Class of 2023</span>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <div class="ui card" style={{ position: "relative" }}>
+          <div class="image">
+            <img src={composite}></img>
+          </div>
+          <div class="content">
+            <a class="header">Dean Wahle</a>
+            <div class="meta">
+              <span class="date">Class of 2023</span>
+            </div>
           </div>
         </div>
+        <div className="two">
+          <div className="ui styled accordion">{renderedItems}</div>
+        </div>
       </div>
-      <div className="ui styled accordion">{renderedItems}</div>
     </div>
   );
 };

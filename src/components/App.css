@@ -1,0 +1,6 @@
+#uioverrides h1 {
+  /* 100+1=101 priority score, yay! */
+  line-height: 1;
+  color: inherit;
+  margin: 0;
+}
