@@ -1,3 +1,6 @@
+//import { AiFillGithub } from "react-icons/AiFillGithub";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import "./Icons.css";
 function Profile(props) {
   return (
     <div className="Profile">
@@ -12,8 +15,9 @@ function Profile(props) {
           href="https://github.com/DeanWahle"
           target="_blank"
           rel="noopener noreferrer"
+          icon="AiFillGithub"
         >
-          View Github
+          View Github <FaGithub className="CustomIcon" />
         </a>{" "}
         <a
           className={`button ${"workButton"}`}
@@ -21,7 +25,7 @@ function Profile(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          View LinkedIn
+          View LinkedIn <FaLinkedin className="CustomIcon" />
         </a>
       </div>
 

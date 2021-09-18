@@ -1,0 +1,8 @@
+.CustomIcon {
+  justify-content: right;
+  align-items: right;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  vertical-align: middle;
+}
