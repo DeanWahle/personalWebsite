@@ -3,6 +3,7 @@ import Menu from "./Menu";
 import Timeline from "./Timeline";
 import ProfileApp from "./ProfileComponent/ProfileApp";
 import "./App.css";
+import Fitbit from "./FitbitComponent/Fitbit";
 
 const App = () => {
   const [menuItem, setMenuItem] = useState("Experience");
@@ -13,7 +14,7 @@ const App = () => {
       </div>
       {menuItem === "Experience" ? <Timeline /> : console.log()}
       {menuItem === "Personal" ? <ProfileApp /> : console.log()}
-      {menuItem === "Contact" ? <div>contact</div> : console.log()}
+      {menuItem === "Fitness" ? <Fitbit /> : console.log()}
     </div>
   );
 };

@@ -19,6 +19,19 @@ $sandybrown: #f49d6e;
   width: 960px;
 }
 
+.buttons {
+  width: 1000px;
+  margin-left: 1vw;
+  display: inline;
+  margin-bottom: 1.5vw;
+}
+
+.action_btn {
+  width: 300px;
+  margin: 0 auto;
+  display: inline;
+}
+
 .App {
   top: 0;
   left: 0;
@@ -46,7 +59,7 @@ $sandybrown: #f49d6e;
 
   .Profile {
     width: 50vw;
-    padding: 5vw 10vw;
+    padding: 5vw 8vw;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -60,29 +73,43 @@ $sandybrown: #f49d6e;
     .Name {
       font-size: 5vw;
       font-family: "Bebas Neue", sans-serif;
-      margin-bottom: 4vw;
+      margin-bottom: 5vw;
     }
 
     .Bio {
-      font-size: 15px;
+      font-size: 20px;
       line-height: 1.8;
       margin-bottom: 3vw;
       opacity: 0.4;
+      margin-left: 1vw;
+    }
+    .Bio2 {
+      font-size: 20px;
+      line-height: 1.8;
+      margin-bottom: 1vw;
+      opacity: 0.4;
+      margin-left: 1vw;
+    }
+    .Bio3 {
+      font-size: 20px;
+      line-height: 1.8;
+      margin-bottom: 3vw;
+      opacity: 0.4;
+      margin-left: 1vw;
     }
 
     .Quote {
-      margin-top: auto;
       blockquote {
-        font-size: 36px;
+        font-size: 20px;
         font-family: "Montserrat", sans-serif;
         font-style: italic;
         line-height: 1.4;
-        margin-bottom: 0.6em;
+        margin-bottom: 0.3em;
       }
 
       .byline {
         font-family: "Times", serif;
-        text-align: right;
+        padding-left: 14vw;
         font-size: 22px;
         font-style: italic;
         opacity: 0.5;

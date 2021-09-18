@@ -4,7 +4,7 @@ const Menu = ({ setMenuItem }) => {
   const [activeMenuItem, setActiveMenuItem] = useState("Experience");
   const ExperienceActive = activeMenuItem === "Experience" ? "active" : "";
   const PersonalActive = activeMenuItem === "Personal" ? "active" : "";
-  const ContactActive = activeMenuItem === "Contact" ? "active" : "";
+  const ContactActive = activeMenuItem === "Fitness" ? "active" : "";
 
   const setMenus = (item) => {
     setActiveMenuItem(item);
@@ -28,9 +28,9 @@ const Menu = ({ setMenuItem }) => {
         </a>
         <a
           className={`item ${ContactActive}`}
-          onClick={() => setMenus("Contact")}
+          onClick={() => setMenus("Fitness")}
         >
-          Contact
+          Fitness
         </a>
       </div>
     </React.Fragment>

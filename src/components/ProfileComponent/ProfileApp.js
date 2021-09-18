@@ -3,13 +3,14 @@ import "./ProfileApp.scss";
 import Image from "./Image";
 import Profile from "./Profile";
 import composite from "../../images/ppp2.png";
-import Fitbit from "../FitbitComponent/Fitbit";
 
 const ProfileApp = () => {
   const [name, setName] = React.useState("Dean Wahle");
-  const [bio, setBio] = React.useState(
-    "26 year old Designer / Developer living in Stockholm. Originally from Oxford, England. Love to make stuff."
+  const [bio1, setBio1] = React.useState(
+    "20 year old engineer/developer from Boston. Love to make stuff. Currently studying artifical intelligence, neural networks, and machine learning abroad at DIS Copenhagen."
   );
+  const [bio2, setBio2] = React.useState("Cell: +1 (781) 733-1395");
+  const [bio3, setBio3] = React.useState("Email: wahldh19@wfu.edu");
   const [quote, setQuote] = React.useState({
     content: "Anything in life worth doing, is worth overdoing.",
     source: "Shane Patton",
@@ -19,8 +20,7 @@ const ProfileApp = () => {
     <div className="App">
       <Image src={composite} />
       <div id="wrapper">
-        <Fitbit />
-        <Profile name={name} bio={bio} quote={quote} />
+        <Profile name={name} bio1={bio1} bio2={bio2} bio3={bio3} />
       </div>
     </div>
   );
