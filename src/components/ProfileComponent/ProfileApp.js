@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./ProfileApp.scss";
 import Image from "./Image";
 import Profile from "./Profile";
-import composite from "../../images/composite.jpg";
+import composite from "../../images/ppp2.png";
+import Fitbit from "../FitbitComponent/Fitbit";
 
 const ProfileApp = () => {
   const [name, setName] = React.useState("Dean Wahle");
@@ -10,14 +11,17 @@ const ProfileApp = () => {
     "26 year old Designer / Developer living in Stockholm. Originally from Oxford, England. Love to make stuff."
   );
   const [quote, setQuote] = React.useState({
-    content: "Drop the 'the'. Just Facebook. It's cleaner.",
-    source: "The Secret Life of Walter Mitty",
+    content: "Anything in life worth doing, is worth overdoing.",
+    source: "Shane Patton",
   });
 
   return (
     <div className="App">
       <Image src={composite} />
-      <Profile name={name} bio={bio} quote={quote} />
+      <div id="wrapper">
+        <Fitbit />
+        <Profile name={name} bio={bio} quote={quote} />
+      </div>
     </div>
   );
 };

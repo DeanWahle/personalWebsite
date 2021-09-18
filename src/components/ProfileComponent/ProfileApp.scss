@@ -13,6 +13,12 @@ $sandybrown: #f49d6e;
   }
 }
 
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
 .App {
   top: 0;
   left: 0;
@@ -52,22 +58,23 @@ $sandybrown: #f49d6e;
     }
 
     .Name {
-      font-size: 6vw;
-      font-family: "Abril Fatface";
+      font-size: 5vw;
+      font-family: "Bebas Neue", sans-serif;
       margin-bottom: 4vw;
     }
 
     .Bio {
-      font-size: 25px;
+      font-size: 15px;
       line-height: 1.8;
       margin-bottom: 3vw;
       opacity: 0.4;
     }
 
     .Quote {
+      margin-top: auto;
       blockquote {
         font-size: 36px;
-        font-family: "Abril Fatface";
+        font-family: "Montserrat", sans-serif;
         font-style: italic;
         line-height: 1.4;
         margin-bottom: 0.6em;
@@ -78,7 +85,7 @@ $sandybrown: #f49d6e;
         text-align: right;
         font-size: 22px;
         font-style: italic;
-        opacity: 0.25;
+        opacity: 0.5;
       }
     }
   }

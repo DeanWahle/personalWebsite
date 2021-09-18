@@ -39,44 +39,28 @@ function Timeline() {
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
               icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
             >
-              {element.image === "BS" ? (
-                <img src={BSImage} />
-              ) : (
-                console.log("Missing BSImage")
-              )}
-              {element.image === "GU" ? (
-                <img src={GUImage} />
-              ) : (
-                console.log("Missing GUImage")
-              )}
-              {element.image === "Uber" ? (
-                <img src={UberImage} />
-              ) : (
-                console.log("Missing UberImage")
-              )}
-              {element.image === "WF" ? (
-                <img src={WFImage} />
-              ) : (
-                console.log("Missing WFImage")
-              )}
-              {element.image === "SM" ? (
-                <img src={SMImage} />
-              ) : (
-                console.log("Missing WFImage")
-              )}
+              {element.image === "BS" ? <img src={BSImage} /> : <img></img>}
+              {element.image === "GU" ? <img src={GUImage} /> : <img></img>}
+              {element.image === "Uber" ? <img src={UberImage} /> : <img></img>}
+              {element.image === "WF" ? <img src={WFImage} /> : <img></img>}
+              {element.image === "SM" ? <img src={SMImage} /> : <img></img>}
               <h3 className="vertical-timeline-element-title">
                 {element.title}
               </h3>
               <h5 className="vertical-timeline-element-subtitle">
                 {element.location}
               </h5>
-              <p id="description">{element.description}</p>
+              <p id="description">{element.bullet1}</p>
+              <p id="description">{element.bullet2}</p>
+              <p id="description">{element.bullet3}</p>
               {showButton && (
                 <a
                   className={`button ${
                     isWorkIcon ? "workButton" : "schoolButton"
                   }`}
-                  href="/"
+                  href={element.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {element.buttonText}
                 </a>

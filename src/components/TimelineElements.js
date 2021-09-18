@@ -4,55 +4,71 @@ let TimelineElements = [
     image: "BS",
     title: "Software Engineering Intern",
     location: "Businessolver Inc.",
-    description:
-      "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
-    buttonText: "View Frontend Projects",
+    bullet1:
+      "● Increased code readability and maintainability by refactoring React JS components from class-based to functional using React Hooks",
+    bullet2:
+      "● Debugged database deletion logic and implemented a fix to foreign key constraint failures for Rules Management data",
+    bullet3:
+      "● Documented and fixed over a dozen bugs in our production server by following stack traces, recreating the errors, and adding code changes",
+    buttonText: "Visit Company Website",
     date: "May 2021 - August 2021",
     icon: "work",
+    link: "https://www.businessolver.com/",
   },
   {
     id: 2,
-    image: "GU",
-    title: "Software Engineering Intern",
-    location: "Good Uncle",
-    description:
-      "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages.",
-    buttonText: "View Backend Projects",
-    date: "September 2020 - January 2021",
-    icon: "work",
-  },
-  {
-    id: 3,
     image: "Uber",
     title: "Open Source Contributer",
     location: "Uber",
-    description:
-      "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+    bullet1:
+      "● M3DB is a distributed time-series database, open-sourced by Uber in 2018, used to quickly store and access billions of metrics on Uber’s back-end systems at any given time",
+    bullet2:
+      "● I’ve made two contributions, building out Graphite function implementations",
     buttonText: "View Contributions",
     date: "January 2021",
     icon: "work",
+    link: "https://github.com/m3db/m3/commits?author=DeanWahle",
   },
+  {
+    id: 3,
+    image: "GU",
+    title: "Software Engineering Intern",
+    location: "Good Uncle",
+    bullet1:
+      "● Leveraged GoLang data-visualization library to build interactive charts, displaying aggregated product data in our dashboard",
+    bullet2:
+      "● Refactored driver-side mobile app in React Native to render driver data, tested using Xcode and iOS Simulator",
+    bullet3:
+      "● Refactored internal CLI in Golang to make requests to our production database, unlocking easier data visibility for my team",
+    buttonText: "Visit Company Website",
+    date: "September 2020 - January 2021",
+    icon: "work",
+    link: "https://www.gooduncle.com/",
+  },
+
   {
     id: 4,
     image: "WF",
     title: "Wake Forest University",
-    location: "B.S. Computer Science",
-    description:
-      "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
-    buttonText: "Company Website",
+    location: "B.S. Computer Science '23",
+    bullet1:
+      "● Relevant Coursework: Programming in Java, Data Structures and Algorithms, Data Visualization, Object-Oriented Programming, Discrete Mathematics, Statistics, Calculus",
+    buttonText: "Visit Program Page",
     date: "August 2019 - May 2023",
     icon: "school",
+    link: "https://cs.wfu.edu/",
   },
   {
     id: 5,
     image: "SM",
     title: "Price Estimation Intern",
     location: "Sullivan & McLaughlin",
-    description:
-      "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-    buttonText: "Company Website",
+    bullet1:
+      "● Created price estimations for electrical subcontracting jobs using Bluebeam and Excel",
+    buttonText: "Visit Company Website",
     date: "June 2019 - August 2019",
     icon: "work",
+    link: "https://www.sullymac.com/",
   },
 ];
 
