@@ -5,7 +5,6 @@ const Fitbit = () => {
   return (
     <div>
       <StepsData />
-      <div>Fitbit.js</div>
     </div>
   );
 };

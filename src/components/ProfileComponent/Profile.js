@@ -21,18 +21,13 @@ function Profile(props) {
         </a>{" "}
         <a
           className={`button ${"workButton"}`}
-          href="https://github.com/DeanWahle"
+          href="https://www.linkedin.com/in/dean-wahle-71560b166/"
           target="_blank"
           rel="noopener noreferrer"
         >
           View LinkedIn <FaLinkedin className="CustomIcon" />
         </a>
       </div>
-
-      {/* <div className="Quote">
-        <blockquote>&ldquo; {props.quote.content} &rdquo;</blockquote>
-        <div className="byline">&mdash; {props.quote.source}</div>
-      </div> */}
     </div>
   );
 }
