@@ -1,15 +1,16 @@
 .rowC {
-  display: flex;
-  flex-direction: row;
+  display: block;
   padding-top: 10vm;
   align-items: center;
-  padding-left: 10%;
+  padding-left: 45%;
 }
 .label {
   padding: 20px;
+  width: 100%;
+  height: 100%;
 }
 .spinner {
-  position: fixed; /* or absolute */
+  position: fixed;
   top: 25%;
   left: 50%;
 }
