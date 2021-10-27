@@ -24,6 +24,13 @@ $sandybrown: #f49d6e;
   margin: 0 auto;
   display: inline;
 }
+.stupid {
+  margin-left: 11% !important;
+  margin-top: 2%;
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 1vw;
+}
 
 .fitApp {
   padding-top: 2%;
@@ -84,13 +91,6 @@ $sandybrown: #f49d6e;
       font-size: 20px;
       line-height: 1.8;
       opacity: 0.4;
-      margin-bottom: 1vw;
-    }
-
-    .fitbuttons {
-      width: 1000px;
-      margin-left: 1vw;
-      display: inline;
       margin-bottom: 1vw;
     }
   }
