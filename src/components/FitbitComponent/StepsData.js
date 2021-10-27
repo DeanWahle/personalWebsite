@@ -3,7 +3,9 @@ import axios from "axios";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import Progress from "./Progress";
-import "./StepsData.css";
+import "./StepsData.scss";
+import FitnessText from "./FitnessText";
+import FitnessProfile from "./FitnessProfile";
 
 class StepsData extends React.Component {
   constructor(props) {
@@ -52,37 +54,52 @@ class StepsData extends React.Component {
     const daysStrings = this.state.days.map((day) => JSON.stringify(day));
     //const numsForGraph = realNums.map((day) => parseInt(day));
     const stepsOutOf1 = realNums[1];
+    const day = new Date();
+    const day1 = day.getDay();
+    const dateConvert = (day) => {
+      console.log(day);
+      if (day == 0) return "Sun";
+      else if (day == 1) return "Mon";
+      else if (day == 2) return "Tues";
+      else if (day == 3) return "Wed";
+      else if (day == 4) return "Thur";
+      else if (day == 5) return "Fri";
+      else if (day == 6) return "Sat";
+      else if (day == 7) return "Sun";
+      else return "";
+    };
+
     return (
       <div>
         {this.state.days.length > 0 ? (
           <div className="rowC">
             <div className="label">
-              Mon
-              <Progress num={realNums[0]} />
+              {dateConvert(day1)}
+              <Progress num={realNums[6]} />
             </div>
             <div className="label">
-              Tues
-              <Progress num={realNums[1]} />
-            </div>
-            <div className="label">
-              Wed
-              <Progress num={realNums[2]} />
-            </div>
-            <div className="label">
-              Thu
-              <Progress num={realNums[3]} />
-            </div>
-            <div className="label">
-              Fri
-              <Progress num={realNums[4]} />
-            </div>
-            <div className="label">
-              Sat
+              {dateConvert((day1 + 6) % 7)}
               <Progress num={realNums[5]} />
             </div>
             <div className="label">
-              Sun
-              <Progress num={realNums[6]} />
+              {dateConvert((day1 + 5) % 7)}
+              <Progress num={realNums[4]} />
+            </div>
+            <div className="label">
+              {dateConvert(day1 + 4)}
+              <Progress num={realNums[3]} />
+            </div>
+            <div className="label">
+              {dateConvert(day1 + 3)}
+              <Progress num={realNums[2]} />
+            </div>
+            <div className="label">
+              {dateConvert(day1 + 2)}
+              <Progress num={realNums[1]} />
+            </div>
+            <div className="label">
+              {dateConvert(day1 + 1)}
+              <Progress num={realNums[0]} />
             </div>
           </div>
         ) : (
