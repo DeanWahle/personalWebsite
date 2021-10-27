@@ -2,4 +2,4 @@ This is a portfilio website developed by me! It includes an interactive timeline
 
 Hosted on Firebase
 
-Currently live at this URL: https://personal-site-acc3f.web.app/
+Currently live at this URL: https://deanwahle-4e26f.web.app/
