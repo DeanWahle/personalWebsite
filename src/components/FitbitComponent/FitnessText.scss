@@ -1,0 +1,97 @@
+@import "https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto";
+
+// Colors
+$spacecadet: #2c2c54;
+$jazzberryjam: #a40e4c;
+$cambridgeblue: #acc3a6;
+$peachpuff: #f5d6ba;
+$sandybrown: #f49d6e;
+
+@mixin mq($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+#wrapperf {
+  margin-right: 22%;
+  margin-left: 10%;
+  width: 960px;
+}
+
+.fitaction_btn {
+  width: 300px;
+  margin: 0 auto;
+  display: inline;
+}
+
+.fitApp {
+  padding-top: 2%;
+  width: 100vw;
+  height: 60vh;
+  font-family: "Roboto";
+  display: flex;
+
+  @include mq(980px) {
+    flex-direction: column;
+  }
+
+  .fitImage {
+    width: 50vw;
+    height: 60vw;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+    @include mq(980px) {
+      width: 100vw;
+      height: 70vh;
+    }
+  }
+
+  .fitProfile {
+    width: 70vw;
+    padding: 1vw 1vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: $spacecadet;
+
+    @include mq(980px) {
+      width: 100vw;
+      height: 30vh;
+    }
+
+    .fitName {
+      font-size: 4vw;
+      font-family: "Bebas Neue", sans-serif;
+      margin-bottom: 1vw;
+    }
+
+    .fitBio {
+      font-size: 20px;
+      line-height: 1.8;
+      margin-bottom: 1vw;
+      opacity: 0.4;
+    }
+    .fitBio2 {
+      font-size: 20px;
+      line-height: 1.8;
+      margin-bottom: 1vw;
+      opacity: 0.4;
+    }
+    .fitBio3 {
+      font-size: 20px;
+      line-height: 1.8;
+      opacity: 0.4;
+      margin-bottom: 1vw;
+    }
+
+    .fitbuttons {
+      width: 1000px;
+      margin-left: 1vw;
+      display: inline;
+      margin-bottom: 1vw;
+    }
+  }
+}
