@@ -57,7 +57,7 @@ class StepsData extends React.Component {
     const day = new Date();
     const day1 = day.getDay();
     const dateConvert = (day) => {
-      console.log(day);
+      //console.log(day);
       if (day == 0) return "Sun";
       else if (day == 1) return "Mon";
       else if (day == 2) return "Tues";
@@ -113,36 +113,3 @@ class StepsData extends React.Component {
 }
 
 export default StepsData;
-
-/*
-<div className="rowC">
-          <div className="label">
-            Mon
-            <Progress num={realNums[0]} />
-          </div>
-          <div className="label">
-            Tues
-            <Progress num={realNums[1]} />
-          </div>
-          <div className="label">
-            Wed
-            <Progress num={realNums[2]} />
-          </div>
-          <div className="label">
-            Thu
-            <Progress num={realNums[3]} />
-          </div>
-          <div className="label">
-            Fri
-            <Progress num={realNums[4]} />
-          </div>
-          <div className="label">
-            Sat
-            <Progress num={realNums[5]} />
-          </div>
-          <div className="label">
-            Sun
-            <Progress num={realNums[6]} />
-          </div>
-        </div>
-*/
