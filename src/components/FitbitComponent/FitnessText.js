@@ -2,8 +2,16 @@ import React, { useState } from "react";
 import "./FitnessText.scss";
 import FitnessProfile from "./FitnessProfile";
 import StepsData from "./StepsData";
+import emailjs from "emailjs-com";
+emailjs.init("user_1F3AfldofVKrQWsisABGN");
 
 const FitnessText = () => {
+  const onClick = () => {
+    emailjs.send("service_7uvsivo", "template_mof7uxb");
+    setEmailSent(true);
+  };
+  const [emailSent, setEmailSent] = useState(false);
+
   const [name, setName] = React.useState("Fitness");
   const [bio1, setBio1] = React.useState(
     "Fitness is a very important part of my life, so on this page I have used the FitBit API to visualize my steps data for the week."
@@ -23,7 +31,32 @@ const FitnessText = () => {
         </div>
       </div>
       <StepsData />
+      {emailSent ? (
+        <div className="stupid">Email sent!</div>
+      ) : (
+        <div className="stupid">
+          <a
+            className={`button ${"workButton"}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => onClick()}
+          >
+            It's broken!
+          </a>
+        </div>
+      )}
     </div>
   );
 };
 export default FitnessText;
+
+/*
+<a
+        className={`button ${"workButton"}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => onClick()}
+      >
+        It's broken!
+      </a>
+      */
