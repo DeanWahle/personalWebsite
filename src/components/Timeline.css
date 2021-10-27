@@ -36,6 +36,7 @@ h3 {
   border-radius: 5px;
   color: white;
   text-align: center;
+  cursor: pointer;
 }
 
 .workButton {
