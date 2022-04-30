@@ -27,7 +27,7 @@ class StepsData extends React.Component {
       {
         headers: {
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyM0JGTU4iLCJzdWIiOiI5NVJZTkMiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNjM3NzAzMTUzLCJpYXQiOjE2MzcwOTgzNTN9.6B7vlZ2r5ob6APcWDSyl_8bwXTBm4PnX3OjQmP24vmI",
+            "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyM0JGTU4iLCJzdWIiOiI5NVJZTkMiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdhY3Qgd3NldCB3bG9jIiwiZXhwIjoxNjUxODg2MDc4LCJpYXQiOjE2NTEyODEyNzh9.1FKMM3AjY5TD5sRUBu0q1275on0wTFltbdnGE-35C8Q",
         },
       }
     );
@@ -58,14 +58,13 @@ class StepsData extends React.Component {
     const day1 = day.getDay();
     const dateConvert = (day) => {
       //console.log(day);
-      if (day == 0) return "Sun";
-      else if (day == 1) return "Mon";
-      else if (day == 2) return "Tues";
-      else if (day == 3) return "Wed";
-      else if (day == 4) return "Thur";
-      else if (day == 5) return "Fri";
-      else if (day == 6) return "Sat";
-      else if (day == 7) return "Sun";
+      if (day % 7 == 0) return "Sun";
+      else if (day % 7 == 1) return "Mon";
+      else if (day % 7 == 2) return "Tues";
+      else if (day % 7 == 3) return "Wed";
+      else if (day % 7 == 4) return "Thur";
+      else if (day % 7 == 5) return "Fri";
+      else if (day % 7 == 6) return "Sat";
       else return "";
     };
 

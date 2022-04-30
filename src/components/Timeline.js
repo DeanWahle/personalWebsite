@@ -6,6 +6,7 @@ import GUImage from "../images/GU.png";
 import UberImage from "../images/Uber.png";
 import WFImage from "../images/WFIcon.png";
 import SMImage from "../images/SM.png";
+import GSImage from "../images/gusto.png";
 
 import TimelineElements from "./TimelineElements";
 
@@ -44,6 +45,7 @@ function Timeline() {
               {element.image === "Uber" ? <img src={UberImage} /> : <img></img>}
               {element.image === "WF" ? <img src={WFImage} /> : <img></img>}
               {element.image === "SM" ? <img src={SMImage} /> : <img></img>}
+              {element.image === "GS" ? <img src={GSImage} /> : <img></img>}
               <h3 className="vertical-timeline-element-title">
                 {element.title}
               </h3>

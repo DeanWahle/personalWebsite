@@ -59,7 +59,7 @@ $sandybrown: #f49d6e;
 
   .Profile {
     width: 50vw;
-    padding: 5vw 8vw;
+    padding: 5vw 3vw;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -73,7 +73,7 @@ $sandybrown: #f49d6e;
     .Name {
       font-size: 5vw;
       font-family: "Bebas Neue", sans-serif;
-      margin-bottom: 5vw;
+      margin-bottom: 3vw;
     }
 
     .Bio {
@@ -93,7 +93,14 @@ $sandybrown: #f49d6e;
     .Bio3 {
       font-size: 20px;
       line-height: 1.8;
-      margin-bottom: 3vw;
+      margin-bottom: 1vw;
+      opacity: 0.4;
+      margin-left: 1vw;
+    }
+    .Bio4 {
+      font-size: 20px;
+      line-height: 1.8;
+      margin-bottom: 4vw;
       opacity: 0.4;
       margin-left: 1vw;
     }
