@@ -27,7 +27,9 @@ const FitnessText = () => {
     <div>
       <div className="fitApp">
         <div id="wrapperf">
-          <FitnessProfile name={name} bio1={bio1} bio2={bio2} bio3={bio3} />
+          <div className="space">
+            <FitnessProfile name={name} bio1={bio1} bio2={bio2} bio3={bio3} />
+          </div>
         </div>
       </div>
       <StepsData />
