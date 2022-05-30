@@ -6,8 +6,9 @@ let TimelineElements = [
     location: "Gusto",
     bullet1:
       "● Gusto Cashout Team - Gusto Cashout gives employees access to money between paydays that is repaid automatically from their paycheck",
-    bullet2: "● Developed using Ruby on Rails and GraphQL",
-    bullet3: "",
+    bullet2:
+      "● Implemented document verification retry functionality, allowing previously rejected Gusto Cashout applicants to fix the errors in their application and try again (~30,000 users)",
+    bullet3: "● Developed using Ruby on Rails and GraphQL",
     buttonText: "Visit Gusto Cashout Website",
     date: "May 2022 - August 2022",
     icon: "work",

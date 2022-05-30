@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./ProfileApp.scss";
 import Image from "./Image";
 import Profile from "./Profile";
-import composite from "../../images/ppp2.png";
+import composite from "../../images/pic6.png";
 
 const ProfileApp = () => {
   const [name, setName] = React.useState("Dean Wahle");
