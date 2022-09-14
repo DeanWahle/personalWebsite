@@ -5,14 +5,15 @@ let TimelineElements = [
     title: "Software Engineering Intern",
     location: "Gusto",
     bullet1:
-      "● Gusto Cashout Team - Gusto Cashout gives employees access to money between paydays that is repaid automatically from their paycheck",
+      "● Built full-stack identity verification “retry” functionality, allowing previously rejected Gusto Cashout applicants to complete enrollment (~30,000 users)",
     bullet2:
-      "● Implemented document verification retry functionality, allowing previously rejected Gusto Cashout applicants to fix the errors in their application and try again (~30,000 users)",
-    bullet3: "● Developed using Ruby on Rails and GraphQL",
-    buttonText: "Visit Gusto Cashout Website",
+      "● Implemented backend changes for newly added eCBSV fields, increasing identity verification approval rates by ~8%",
+    bullet3:
+      "● Added device ID parameter to identity verification checks on iOS, Android, and Web, increasing auto-approval rates by ~3%",
+    buttonText: "Check Out Gusto Wallet",
     date: "May 2022 - August 2022",
     icon: "work",
-    link: "https://gusto.com/product/cashout",
+    link: "https://gusto.com/wallet",
   },
   {
     id: 1,
@@ -67,7 +68,7 @@ let TimelineElements = [
     title: "Wake Forest University",
     location: "B.S. Computer Science '23",
     bullet1:
-      "● Relevant Coursework: Programming in Java, Data Structures and Algorithms, Data Visualization, Object-Oriented Programming, Discrete Mathematics, Statistics, Calculus",
+      "● Relevant Coursework: Programming in Java and C, Data Structures and Algorithms, Computer Systems, Data Visualization, Discrete Mathematics, Linear Algebra, Statistics, Calculus, Artificial Intelligence",
     buttonText: "Visit Program Page",
     date: "August 2019 - May 2023",
     icon: "school",

@@ -27,7 +27,7 @@ class StepsData extends React.Component {
       {
         headers: {
           Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyM0JGVkIiLCJzdWIiOiI5NVJZTkMiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd251dCB3cHJvIHdzbGUgd3dlaSB3c29jIHdzZXQgd2FjdCB3bG9jIiwiZXhwIjoxNjU0MDIxOTc3LCJpYXQiOjE2NTM5MzU3MDZ9.x46afAQ0A3dVDbsmvNVzFxq9sxxaGV7nOaNKagPw3qA",
+            "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyM0JGVkIiLCJzdWIiOiI5NVJZTkMiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJ3aHIgd3BybyB3bnV0IHdzbGUgd3NvYyB3YWN0IHdveHkgd3RlbSB3d2VpIHdzZXQgd3JlcyB3bG9jIiwiZXhwIjoxNjYzNTk2ODAxLCJpYXQiOjE2NjI5OTIwMDF9.ck2-zHrG0IeDXua8UIe6x3F0EiospQsaBgD7xuYz29c",
         },
       }
     );
