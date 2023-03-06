@@ -5,15 +5,6 @@ function Profile(props) {
   return (
     <div className="Profile">
       <h1 className="Name">{props.name}</h1>
-      <p className="Bio">{props.bio1}</p>
-      <p className="Bio3">{props.bio4}</p>
-      <p className="Bio3">
-        - Wake Forest Computer Science Entrepreneur Fellowship - Winner
-        (2021-2022)
-      </p>
-      <p className="Bio4">- Wake Hacks - 2nd Place Winner (2022)</p>
-      <p className="Bio3">{props.bio2}</p>
-      <p className="Bio3">{props.bio3}</p>
       <div className="buttons">
         <a
           className={`button ${"workButton"}`}
@@ -26,13 +17,26 @@ function Profile(props) {
         </a>{" "}
         <a
           className={`button ${"workButton"}`}
-          href="https://www.linkedin.com/in/dean-wahle-71560b166/"
+          href="https://www.linkedin.com/in/dean-wahle"
           target="_blank"
           rel="noopener noreferrer"
         >
           View LinkedIn <FaLinkedin className="CustomIcon" />
         </a>
       </div>
+      <p className="Bio">{props.bio1}</p>
+      <p className="Bio3">{props.bio4}</p>
+      
+      <p className="Bio4">- Wake Hacks - 2nd Place Winner (2022)
+      <br/>
+      - Wake Forest Computer Science Entrepreneur Fellowship - Winner
+        (2021-2022)</p>
+    
+  
+
+      <p className="Bio3">{props.bio2}</p>
+      <p className="Bio3">{props.bio3}</p>
+      
     </div>
   );
 }
